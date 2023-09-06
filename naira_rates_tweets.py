@@ -15,5 +15,5 @@ for tweet in sntwitter.TwitterSearchScraper(query).get_items():
         tweets.append([tweet.date, tweet.user.username, tweet.content])
 
 df = pd.DataFrame(tweets, columns=['Date', 'Username', 'Tweet'])
-df.to_csv('nr_blackmarket_raw.csv')
-# print(df)
+df.to_csv('raw_exchange_rate.csv')
+# print(df.head())
